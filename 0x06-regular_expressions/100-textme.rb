@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/\[from:(.*?)\] \[to:(.*?)\] \[flags:(.*?)\]/).join(",")
+# Match Sender, Reciever and flags from 
+# Message logs
+
+puts ARGV[0].scan(/from:+\K(\d{11})/).join
