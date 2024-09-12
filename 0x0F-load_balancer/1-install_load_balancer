@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # install load balancer
 
@@ -40,8 +41,8 @@ frontend clickviral-tech-frontend
 
 backend clickviral-tech-backend
     balance roundrobin
-    server 151666-web-01 35.174.204.243 check
-    server 151666-web-02 18.207.112.36 check
+    server 513813-web-01 35.174.204.243 check
+    server 513813-web-02 18.207.112.36 check
 "
 
 # shellcheck disable=SC2154
